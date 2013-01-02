@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/editTextTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Titulo" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTitulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Descrição"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/editTextDataFim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextDataInicio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextDataInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextDescricao"
+        android:layout_below="@+id/editTextDescricao"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/buttonSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxStatus"
+        android:layout_toLeftOf="@+id/buttonCancelar"
+        android:text="Cancelar" />
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkBoxStatus"
+        android:layout_marginRight="34dp"
+        android:text="Salvar" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextDataFim"
+        android:layout_below="@+id/editTextDataFim"
+        android:layout_marginTop="15dp"
+        android:text="Concluído" />
+
+</RelativeLayout>
